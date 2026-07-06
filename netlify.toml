@@ -4,6 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  NPM_FLAGS = "--include=dev"
 
 # SPA redirect - required for React Router / client-side routing
 # This ensures direct links to routes work (e.g., /about, /contact)
