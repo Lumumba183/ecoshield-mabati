@@ -1,13 +1,11 @@
 [build]
-  command = "npm run build"
+  command = "npm install && npm run build"
   publish = "dist"
 
 [build.environment]
   NODE_VERSION = "20"
-  NPM_FLAGS = "--include=dev"
 
-# SPA redirect - required for React Router / client-side routing
-# This ensures direct links to routes work (e.g., /about, /contact)
+# SPA redirect - required for client-side routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
